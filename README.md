@@ -1,3 +1,5 @@
+![](./Demo.png)
+
 # Kaiser Linux "Distro"
 - i3wm setup
 - Graphical
