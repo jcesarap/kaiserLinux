@@ -1,0 +1,112 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 1037,
+      "width": 1344,
+      "x": 0,
+      "y": 20
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1036,
+      "width": 1342,
+      "x": 1,
+      "y": 20
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1036,
+      "width": 1342,
+      "x": 1,
+      "y": 20
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAFAAABT8AAAQgAAAAAQAAABQAAAU+AAAEHwAAAAAAAAAAB4AAAAABAAAAFAAABT4AAAQf"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "LF24T35",
+      "name": "HDMI-1-0",
+      "serial": "HX5WA10437",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIoA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAmgD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACEAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAPIA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAANIA////AAAFPgAABAwAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Mathematics Simplified"
+        ],
+        "key": "~/Downloads/Mathematics Simplified - Thomas Fisher.epub",
+        "pathtoebook": "~/Downloads/Mathematics Simplified - Thomas Fisher.epub",
+        "timestamp": "2024-06-09T01:12:04.797Z",
+        "title": "Thomas Fisher"
+      },
+      {
+        "authors": [
+          "Laozi"
+        ],
+        "key": "~/.calibre/Laozi/The Tao Teh King, or the Tao and its Characteristics (18)/The Tao Teh King, or the Tao and its Chara - Laozi.epub",
+        "pathtoebook": "~/.calibre/Laozi/The Tao Teh King, or the Tao and its Characteristics (18)/The Tao Teh King, or the Tao and its Chara - Laozi.epub",
+        "timestamp": "2024-04-02T07:12:46.080Z",
+        "title": "The Tao Teh King, or the Tao and its Characteristics"
+      },
+      {
+        "authors": [
+          "Laozi"
+        ],
+        "key": "~/Downloads/pg216-images-3.epub",
+        "pathtoebook": "~/Downloads/pg216-images-3.epub",
+        "timestamp": "2024-04-02T07:07:57.268Z",
+        "title": "The Tao Teh King, or the Tao and its Characteristics"
+      },
+      {
+        "authors": [
+          "Laozi"
+        ],
+        "key": "~/.calibre/Laozi/Tao Te Ching (14)/Tao Te Ching - Laozi.epub",
+        "pathtoebook": "~/.calibre/Laozi/Tao Te Ching (14)/Tao Te Ching - Laozi.epub",
+        "timestamp": "2024-04-02T07:02:21.704Z",
+        "title": "Tao Te Ching"
+      },
+      {
+        "key": "~/Dropbox/Notes/Arki/Manthaneim/—— Sketchbook/—— Root.md",
+        "pathtoebook": "~/Dropbox/Notes/Arki/Manthaneim/—— Sketchbook/—— Root.md",
+        "timestamp": "2024-04-01T09:14:51.656Z",
+        "title": "—— Root"
+      }
+    ]
+  }
+}

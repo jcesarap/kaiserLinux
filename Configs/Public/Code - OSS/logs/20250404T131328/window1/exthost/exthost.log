@@ -1,0 +1,15 @@
+2025-04-04 13:13:31.788 [info] Extension host with pid 4134 started
+2025-04-04 13:13:31.789 [info] Skipping acquiring lock for ~/.config/Code - OSS/User/workspaceStorage/43a892440f172a5c40040343e4bd1d21.
+2025-04-04 13:13:31.798 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-04-04 13:13:31.866 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-04-04 13:13:32.097 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-04-04 13:13:32.145 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-04-04 13:13:32.232 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-04 13:13:32.323 [info] Eager extensions activated
+2025-04-04 13:13:32.346 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-04 13:13:32.349 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-04 13:13:32.374 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-04-04 13:13:32.426 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-04-04 13:13:32.544 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-04-04 13:15:22.987 [info] Extension host terminating: renderer closed the MessagePort
+2025-04-04 13:15:23.091 [info] Extension host with pid 4134 exiting with code 0

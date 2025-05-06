@@ -1,0 +1,44 @@
+general {
+    colors = false
+    interval = 10
+}
+
+order += "tztime local"
+order += "volume master"
+order += "battery all"
+order += "cpu_usage"
+order += "memory"
+
+battery all {
+    format = "  🔋 %status %percentage • Performance                  ———"
+    format_down = "•"
+    status_chr = "+"
+    status_bat = "-"
+    status_unk = "? UNK"
+    status_full = "+"
+    integer_battery_capacity = true
+    separator = false
+}
+
+volume master {
+    format = "   🔊 %volume⠀⠀"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+    separator = false
+}
+
+tztime local {
+    format = "🕒 %Hh%Mm   "
+    separator = false
+}
+
+cpu_usage {
+    format = "               ⚡ %usage     "
+    separator = false
+}
+
+memory {
+    format = "💾 %used            "
+    separator = false
+}

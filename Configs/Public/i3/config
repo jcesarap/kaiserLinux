@@ -1,0 +1,209 @@
+
+
+# ---------------- Comments "Take everything we have given you, and make it your own."
+# ---------------- Running rules
+
+# i3 settings
+set $mod Mod1
+set $mod4 Mod4
+
+# --- Startup
+exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id xset -b # No beeps
+# Touchpad settings (libinput)
+# exec --no-startup-id xinput set-prop "ELAN0001:00 04F3:3140 Touchpad" "libinput Tapping Enabled" 1
+# exec --no-startup-id xinput set-prop "ELAN0001:00 04F3:3140 Touchpad" "libinput Natural Scrolling Enabled" 1
+# exec --no-startup-id xinput set-prop "ELAN0001:00 04F3:3140 Touchpad" "libinput Click Method Enabled" 1, 0
+# exec --no-startup-id xinput set-prop "ELAN0001:00 04F3:3140 Touchpad" "libinput Accel Speed" 0.2
+
+# Wallpaper
+# exec --no-startup-id feh background --bg-fill "~/Dropbox/Avíi/Wallpapers/Arch/Arch-Linux-blue-desktop-kiss-Linux-logo-1657915-wallhere.com.png"
+# exec --no-startup-id wallpaper_dir='/home/$user/Dropbox/Kaiser-Linux/Wallpapers' && random_wallpaper=$(find "$wallpaper_dir" -type f | shuf -n 1) && wal -i "$random_wallpaper" && feh --bg "$random_wallpaper"
+exec --no-startup-id wallpaper='/home/$user/Dropbox/Kaiser-Linux/Wallpapers/beach-wave-sunset.jpg' && wal -i "$wallpaper" && feh --bg "$wallpaper"
+
+
+# --- --- General Env Var
+# export var=value —— Is another way to set these, if outside i3wm
+set $VISUAL micro
+set $EDITOR micro
+set $CM_LAUNCHER rofi  # For Clipboard manager
+set $force_color_prompt yes
+set $user bianca
+
+# --- --- Xorg Env Var
+set $JAVA_HOME /usr/lib/jvm/java-17-openjdk-amd64
+set $XCURSOR_THEME GoogleDot-Black
+set $GTK_THEME Layan-Dark-Solid
+
+# --- --- Services
+# exec --no-startup-id systemctl --user import-environment DISPLAY # For clipmenud
+exec --no-startup-id picom -b  # Run picom in the background
+exec --no-startup-id bash "/home/$user/.config/xrandr/internal.sh"
+exec --no-startup-id setxkbmap br # Input
+exec --no-startup-id /usr/bin/lxqt-policykit-agent &
+exec --no-startup-id parcellite &
+exec --no-startup-id clipmenud &
+exec --no-startup-id flatpak run com.github.zocker_160.SyncThingy &
+exec --no-startup-id polybar mybar_internal &
+exec --no-startup-id dropbox start &
+
+
+# ---------------- Main Shortcuts
+
+# General
+bindsym $mod+space exec "~/Dropbox/Kaiser-Linux/Scripts/rofi/menu.sh rofi"
+bindsym $mod+minus exec dunstctl close 
+# bindsym $mod+apostrophe exec i3lock -i "~/Dropbox/Avíi/Wallpapers/Art/one_ring.jpg"
+# bindsym $mod+Shift+apostrophe exec i3lock -i "~/Dropbox/Avíi/Wallpapers/Art/one_ring.jpg" && sleep 1 && systemctl suspend
+
+# Pulse Audio Control - 100%+
+# bindsym F3 exec --no-startup-id sh -c 'pactl set-sink-volume @DEFAULT_SINK@ +10% && dunstify -r 1234 -t 800 "Current Volume" "$(pactl get-sink-volume @DEFAULT_SINK@ | awk "{print \$5}")"'
+# bindsym F2 exec --no-startup-id sh -c 'pactl set-sink-volume @DEFAULT_SINK@ -10% && dunstify -r 1234 -t 800 "Current Volume" "$(pactl get-sink-volume @DEFAULT_SINK@ | awk "{print \$5}")"'
+bindsym F3 exec --no-startup-id sh -c 'amixer set Master 10%+ unmute && dunstify -t 300 "Current Volume" "$(amixer get Master | grep -m 1 -o "[0-9]*%")"'
+bindsym F2 exec --no-startup-id sh -c 'amixer set Master 10%- unmute && dunstify -t 300 "Current Volume" "$(amixer get Master | grep -m 1 -o "[0-9]*%")"'
+
+# Media control
+bindsym $mod+p exec playerctl play-pause
+bindsym $mod+comma exec playerctl previous
+bindsym $mod+period exec playerctl next
+
+# Brightness
+bindsym F6 exec --no-startup-id brightnessctl set +10%
+bindsym F5 exec --no-startup-id brightnessctl set 10%-
+
+# ---------------- Windows
+
+# Vim
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+# Arrows
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+ 
+
+# Vim
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+# Arrows
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# --- Window Options
+
+# Kill focused window
+bindsym Ctrl+q kill
+
+# Floating
+floating_modifier $mod
+# Merely for ergonomics
+bindsym $mod+Shift+Return floating toggle
+bindsym $mod+Return focus mode_toggle
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# Split in horizontal & vertical orientation
+bindsym $mod+Tab split toggle
+
+# Containers
+bindsym $mod+Shift+Tab layout toggle all
+
+# ---------------- Workspaces
+
+# DON'T OVER USE WORKSPACES - PACE WORK WITH EISENHOWERS
+
+# Define names for default workspaces for which we configure key bindings later on.
+set $ws1 "1:Q"
+set $ws2 "2:W"
+set $ws3 "3:A"
+set $ws4 "4:S"
+
+# Dual-monitor settings
+workspace $ws1 output eDP1
+workspace $ws2 output eDP1
+workspace $ws3 output eDP1
+workspace $ws4 output eDP1
+
+# Scratchpad
+bindsym $mod+Shift+backslash move scratchpad
+bindsym $mod+backslash scratchpad show
+
+# Switch to workspace
+bindsym $mod+q exec i3-msg workspace number $ws1
+bindsym $mod+w exec i3-msg workspace number $ws2
+bindsym $mod+a exec i3-msg workspace number $ws3
+bindsym $mod+s exec i3-msg workspace number $ws4
+
+# Move focused container to workspace
+bindsym $mod+Shift+q move container to workspace number $ws1
+bindsym $mod+Shift+w move container to workspace number $ws2
+bindsym $mod+Shift+a move container to workspace number $ws3
+bindsym $mod+Shift+s move container to workspace number $ws4
+
+bindsym $mod+Ctrl+Right resize shrink width 10 px or 10 ppt
+bindsym $mod+Ctrl+Up resize grow height 10 px or 10 ppt
+bindsym $mod+Ctrl+Down resize shrink height 10 px or 10 ppt
+bindsym $mod+Ctrl+Left resize grow width 10 px or 10 ppt
+
+# ---------------- Program Shortcuts
+
+# Rofi-Music
+#bindsym $mod+m exec --no-startup-id pkill -x rofi || ~/Dropbox/Kaiser-Linux/Scripts/rofi/rofi_music.sh
+#bindsym $mod+Shift+m exec bash "~/Dropbox/Kaiser-Linux/Scripts/rofi/rofi_music.sh" genres
+
+# Neovim
+#bindsym $mod+acute exec alacritty -e nvim
+
+# File explorer
+#bindsym $mod+bracketleft exec alacritty -e ranger
+
+# Browser
+bindsym $mod+n exec firefox
+
+# Terminal
+bindsym $mod+t exec alacritty
+
+# Screenshot
+#bindsym $mod+p exec flameshot gui
+
+# Calculator
+# bindsym $mod+semicolon exec speedcrunch
+#bindsym $mod+semicolon exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort > /dev/null"
+
+# Clipboard
+#bindsym $mod+v exec clipmenu
+#bindsym $mod+Shift+v exec bash ~/Dropbox/Kaiser-Linux/Scripts/rofi/clipboard-pins.sh
+
+# ---------------- Appearance
+
+# General
+font pango:Nasalization 3
+for_window [class=".*"] border pixel 4
+for_window [class="gnome-calculator"] floating enable
+for_window [class="floating"] floating enabled
+hide_edge_borders smart
+focus_on_window_activation urgent
+smart_gaps on
+gaps inner 10px
+gaps outer 5px
+title_align center
+
+# --- Colours - Pywal
+# it fails to get colors from Xresources.
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $fg     $fg  #ffffff   $bg
+client.focused_inactive $bg     $fg     $fg  $bg       #111212
+client.unfocused        $bg     $bg     $bg  $bg       #111212
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+client.background       $bg

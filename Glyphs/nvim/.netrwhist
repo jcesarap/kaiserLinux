@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='~/Documents/——— Workspace-Magn/SnapTag'
+let g:netrw_dirhist_5='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_4='~'
+let g:netrw_dirhist_3='~/Dropbox/Kaiser-Linux/Scripts/DE/Functions'
+let g:netrw_dirhist_2='~/Dropbox'
+let g:netrw_dirhist_1='~'

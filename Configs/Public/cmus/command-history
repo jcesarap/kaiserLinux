@@ -1,0 +1,274 @@
+filter rock
+filter indie
+filter norse
+filter 
+filter
+filter m_young
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}  
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}  |  $vol
+bind common - vol -10%
+bind common = vol +10%
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}  | kjkjjk
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}  |  $volume
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}  |  volume
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}  |  ${vol}
+set softvol=true
+bind common <key> ad
+filter m_tsfh
+filter mixes_tsfh
+filter tsfh
+filter light_rock
+filter alvorada
+set format_current=    %-21%t %a
+set format_playlist=  %t
+set altformat_trackwin= %f%= %d 
+set altformat_title= %f
+set altformat_title=%f
+set altformat_title=     %f
+set start_view=browser
+set format_treewin=     %l
+set format_treewin=      %l
+set format_treewin_artist=     %a 
+set format_treewin=          %l
+set format_treewin=        %l
+set format_playlist=    %t
+set format_current=     %-21%t %a
+set format_current=                    %-21%t %a
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}    
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{repeat}%1{shuffle}      
+filter sku
+filter m_a
+fset m_a=genre="Mixes - Alvorada, Instrumental"
+filter m_kimetsu
+fset m_a=genre="Mixes - Alvorada"
+filter m_norse
+fset m_a=genre="Mixes - Alvorada - Instrumentals"
+filter m_a_instrumentals
+bind -f common l seek +5
+bind -f common h seek -5
+bind -f common k win-up
+bind -f common j win-down
+filter artist="Ivan Torrent"
+bind common <key> shuffle
+--random
+add
+all
+filter m_under
+fset m_under=genre="Mixes - Undertale"
+filter m_undertale
+filter Alvorada
+fset m_young=genre="Mixes - Young People"
+fset m_undertale=genre="Mixes - Undertale"
+filter m_singles
+set start_view=queue
+set color_win_title_fg=default
+set color_win_title_bg=default
+set color_win_title_bg=black
+set color_win_title_fg=black
+set color_win_title_bg=white
+set color_win_title_bg=blac
+set color_win_title_fg=white
+set scroll_offset=10
+set scroll_offset=200
+set scroll_offset=20
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{follow}%1{repeat}%1{shuffle}
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration? %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle}
+set format_current=    %-21%a %t
+set format_current=    %21%a %t
+set format_playlist= %t
+set format_playlist= %21%t
+set format_playlist= %-21%t
+set format_playlist= %-21%a %-21%t
+set format_playlist= %-21%a %21%t
+set format_playlist= %-21%t %21%a
+set format_playlist= %-21%t %a
+set format_playlist= %21%t %a
+set format_playlist= %-21%g %-21%a %t
+set format_playlist= %-21%g %21%a %t
+set format_playlist= %-21%g %a %t
+set format_playlist= %-21%g %a %21%t
+set format_playlist= %-21%a %21%t %g
+set format_playlist= %-21%g %21%t %a
+set format_playlist= %-21%g %t %-21%a
+set format_playlist= %-21%g %t %21%a
+set format_playlist= %-21%g t %21%a
+set format_playlist= %-21%g t %+21%a
+set format_playlist= %-21%g t %-21%a
+set format_playlist= %-21%g %-21%t %-44%a
+set format_playlist= %-21%g %-21%t %-4%a
+set format_playlist= %-21%g %-21%t %-21%a
+set format_playlist= %-21%g %-21%t %a
+set format_playlist= %-21%g %a %-21%t
+set format_playlist= %-21%a 
+set format_playlist= %-21 %g %a %t
+set format_playlist= 
+set format_playlist= %
+set format_current=    %a's %t
+set format_current=    %g %a's %t
+set format_trackwin_va=%3n. %t (%a)
+set format_trackwin=%3n. %t%=
+set format_current=   %a's %t
+set format_current=   %a's %t%
+set format_current=   %a's %t%= %y
+set format_current=   %g — %a's %t%= %y
+set format_current=    %g — %a's %t%= %y
+set format_statusline=    %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle}
+set color_win_sel_fg=white
+set color_win_sel_fg=black
+set color_separator=white
+set color_separator=black
+set color_titleline_fg=white
+set color_titleline_fg=black
+set color_statusline_fg=white
+set color_statusline_fg=black
+set format_statusline=                                 %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle}
+set format_statusline=                                   %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle}
+set format_statusline=                                %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle}
+set format_statusline=                       %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_current=                                 %g — %a's %t%= %y
+set format_current=                                                            %g — %a's %t%= %y
+set format_current=               %g — %a's %t%= %y 
+set format_current=            %g — %a's %t%= %y 
+set format_statusline=              %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set color_titleline_bg=default
+set color_titleline_fg=red
+set color_win_cur_sel_bg=white
+set color_win_cur_sel_bg=default
+set color_win_cur=black
+set color_win_cur_sel_fg=black
+set color_win_title_fg=gray
+set color_statusline_fg=gray
+set color_win_sel_bg=default
+set color_win_sel_bg=224
+set color_win_inactive_sel_bg=white
+set color_win_inactive_sel_fg=white
+set color_win_inactive_sel_bg=black
+set color_win_cur_sel_bg=black
+set color_win_inactive_cur_sel_bg=gray
+set color_win_inactive_cur_sel_bg=black
+set color_win_sel_fg=224
+set color_statusline_fg=224
+set color_win_title_fg=224
+set color_win_title_fg=28
+set color_win_title_fg=192
+set color_statusline_fg=166
+set color_statusline_fg=
+set color_statusline_fg=10
+set color_statusline_bg=default
+set color_win_title_fg=144
+set color_win_title_fg=155
+set color_win_title_fg=177
+set color_win_title_fg=blac
+set color_win_title_fg=grey
+set color_win_title_fg=lightgrey
+set color_win_title_fg=lightgray
+set color_win_title_fg=lightblack
+set color_win_title_bg=blue
+set color_win_attr=blue
+set color_win_bg=default
+set color_win_bg=blue
+set color_cur_sel_attr=default
+set color_cur_sel_attr=blue
+set color_statusline_attr=blue
+set color_win_cur=red
+set color_win_cur_sel_fg=red
+set color_win_inactive_cur_sel_fg=red
+fset m_a_instrumentals=genre="Mixes - Alvorada - Instrumentals"
+fset m_singles=genre="Mixes - Singles"
+set format_current= %g — %a's %t%= %y 
+filter misc
+filter port
+filter portuguese
+filter artist="Thomas Bergersen"
+bind -f common right seek +5
+bind -f common left seek -5
+bind -f common [ vol -5%
+bind -f common ] vol +5%
+bind -f common ] vol +5
+bind -f common [ vol -5
+bind -f common , player-prev
+bind -f common f push filter 
+fset m_tsfh=genre="Mixes - TSFH"
+set format_playlist= %-21%a %t%= %{?X!=0?%3X ?    }
+set format_playlist_va= %-21%A %t (%a)%= %{?X!=0?%3X ?    }
+set format_playlist= %-21%a %3n. %t%= %{?X!=0?%3X ?    }
+fset varie=genre="Varié"
+filter Var
+fset sku=genre="• Sküsolstrømr"
+fset rock=genre="Rock"
+fset rap=genre="Rap"
+fset port=genre="Portuguese"
+fset norse=genre="Norse"
+fset misc=genre="Miscellaneous"
+fset misc_calm=genre="Miscellaneous - Calm"
+fset miscellaneous=genre="Miscellaneous"
+fsetmMiscellaneous=genre="Miscellaneous"
+fset Light_Rock=genre="Light Rock"
+fset indie=genre="Indie"
+fset light_rock=genre="Light Rock"
+fsetiIndie=genre="Indie"
+fset fuyant_extended=genre="Fuyant - Extended"
+fset fuyant=genre="Fuyant"
+fset faulk_klar=genre="Faulk - Klar"
+fset alvorada=genre="Alvorada"
+fset m_norse=genre="Mixes - Norse"
+fset m_kimetsu=genre="Mixes - Kimetsu"
+filter M_Norse
+filter Norse
+set format_title=%g - %l - %t
+set format_title=%g - %l - %t (%y)
+set format_current= %g — %a %t%= %y 
+set format_current= %g - %l -%3n. %t%= %y 
+fset M_TSFH=genre="Mixes - TSFH"
+fset M_Kimetsu=genre="Mixes - Kimetsu"
+fset M_Norse=genre="Mixes - Norse"
+fset Skusolstromr=genre="• Sküsolstrømr"
+fset Rock=genre="Rock"
+fset Rap=genre="Rap"
+fset Varie=genre="Varié"
+fset Portuguese=genre="Portuguese"
+fset Norse=genre="Norse"
+fset "Miscellaneous Calm"=genre="Miscellaneous - Calm"
+fset Miscellaneous=genre="Miscellaneous"
+fset Miscellaneous_Calm=genre="Miscellaneous - Calm"
+fset Indie=genre="Indie"
+fset Fuyant_extended=genre="Fuyant - Extended"
+fset F_extended=genre="Fuyant - Extended"
+fset Faulk_Klar=genre="Faulk - Klar"
+fset Alvorada=genre="Alvorada"
+fset Skusolstrømr=genre="• Sküsolstrømr"
+fset Fuyant.E=genre="Fuyant - Extended"
+fset classical=genre="Fuyant - Extended"
+fset Fuyant=genre="Fuyant"
+fset classical=genre="Fuyant"
+fset
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }} %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}- %{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}- %{?volume>=0?vol: %{?lvolume!=rvolume?%{lvolume},%{rvolume} ?%{volume} }}%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}- %{{?volume>=0?vol: %{?lvolume!=rvolume?%{lvolume},%{rvolume} ?%{volume} }}%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}- {?volume>=0?vol: %{?lvolume!=rvolume?%{lvolume},%{rvolume} ?%{volume} }}%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set lib_sort=genre
+set start_view=sorted
+bind -f common p toggle play_sorted
+bind -f common  toggle play_sorted
+bind -f common ^U refresh
+bind -f common R toggle repeat_current
+bind -f common 3 view browser
+bind -f common 2 view filters
+bind -f common ^N search-next
+bind -f common ^P search-prev
+bind -f common n search-next
+bind -f common left seek +5
+bind -f common space player-pause
+bind -f common . player-next
+bind -f common ^N search-prev
+bind -f common p toggle play_library
+live-filter 
+bind -f common tab win-add-Q
+bind -f common 0 view settings
+bind -f common f view filters
+bind -f common e view browser
+bind -f common ' view queue
+bind -f common 1 view sorted
+bind -f common / search-start

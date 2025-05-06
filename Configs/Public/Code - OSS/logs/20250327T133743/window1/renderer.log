@@ -1,0 +1,73 @@
+2025-03-27 13:37:46.020 [info] Started local extension host with pid 41390.
+2025-03-27 13:37:48.427 [error] Error while getting the latest version for the extension dbaeumer.vscode-eslint. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:37:48.427 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:37:48.428 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:37:48.428 [error] Error while getting the latest version for the extension fey.oscura. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:37:48.428 [error] Error while getting the latest version for the extension haudraufhaun.hyper-is-theme. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:37:48.429 [error] Error while getting the latest version for the extension jdinhlife.gruvbox. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:37:48.429 [error] Error while getting the latest version for the extension mvllow.rose-pine. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:37:48.429 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:37:49.387 [info] [perf] Render performance baseline is 99ms
+2025-03-27 13:39:20.241 [info] Started local extension host with pid 41728.
+2025-03-27 13:39:22.626 [error] Error while getting the latest version for the extension dbaeumer.vscode-eslint. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:22.627 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:22.628 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:22.628 [error] Error while getting the latest version for the extension fey.oscura. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:22.629 [error] Error while getting the latest version for the extension haudraufhaun.hyper-is-theme. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:22.630 [error] Error while getting the latest version for the extension jdinhlife.gruvbox. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:22.631 [error] Error while getting the latest version for the extension mvllow.rose-pine. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:22.631 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:23.213 [info] [perf] Render performance baseline is 91ms
+2025-03-27 13:39:29.834 [error] Canceled: Error: Canceled
+    at Pss (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:812:4120)
+    at vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3246:9594
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3246:7907
+    at async VQ.hb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:29175)
+    at async Promise.all (index 0)
+    at async VQ.gb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:28897)
+    at async VQ.fb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:28676)
+    at async Promise.all (index 0)
+    at async VQ.$ (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:27330)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:27068
+2025-03-27 13:39:43.216 [info] Started local extension host with pid 41828.
+2025-03-27 13:39:43.731 [warning] No search provider registered for scheme: file, waiting
+2025-03-27 13:39:45.071 [error] Canceled: Error: Canceled
+    at Pss (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:812:4120)
+    at vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3246:9594
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3246:7907
+    at async VQ.hb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:29175)
+    at async Promise.all (index 0)
+    at async VQ.gb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:28897)
+    at async VQ.fb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:28676)
+    at async Promise.all (index 0)
+    at async VQ.$ (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:27330)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1981:27068
+2025-03-27 13:39:45.611 [error] Error while getting the latest version for the extension dbaeumer.vscode-eslint. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:45.611 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:45.612 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:45.613 [error] Error while getting the latest version for the extension fey.oscura. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:45.613 [error] Error while getting the latest version for the extension haudraufhaun.hyper-is-theme. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:45.614 [error] Error while getting the latest version for the extension jdinhlife.gruvbox. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:45.615 [error] Error while getting the latest version for the extension mvllow.rose-pine. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:45.616 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:39:46.153 [info] [perf] Render performance baseline is 112ms
+2025-03-27 13:40:19.767 [error] TextModel got disposed before DiffEditorWidget model got reset: Error: TextModel got disposed before DiffEditorWidget model got reset
+    at xie.value (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:405:142590)
+    at E.B (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2392)
+    at E.C (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2462)
+    at E.fire (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2680)
+    at Cf.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:249:21070)
+    at CUe.destroyModel (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:836:969)
+    at jme.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:660:10188)
+    at jme.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1797:19753)
+    at vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1797:21697
+2025-03-27 13:41:30.947 [info] Started local extension host with pid 42081.
+2025-03-27 13:41:33.376 [error] Error while getting the latest version for the extension dbaeumer.vscode-eslint. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:41:33.376 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:41:33.377 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:41:33.377 [error] Error while getting the latest version for the extension fey.oscura. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:41:33.377 [error] Error while getting the latest version for the extension haudraufhaun.hyper-is-theme. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:41:33.377 [error] Error while getting the latest version for the extension jdinhlife.gruvbox. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:41:33.378 [error] Error while getting the latest version for the extension mvllow.rose-pine. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:41:33.378 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-03-27 13:41:33.943 [info] [perf] Render performance baseline is 102ms

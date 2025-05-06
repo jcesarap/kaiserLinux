@@ -1,0 +1,33 @@
+{
+  "add books dialog dir": "~/Dropbox/Archive/• Books",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "auto add path choose": "~/Dropbox/Archive/• Books",
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "change cover dialog": "~/Dropbox/Archive/• Books/Taoism",
+  "choose library location": "~/Dropbox/Archive/• Books",
+  "database location dialog": "~/.calibre",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "7.19"
+    ]
+  },
+  "recursive book import root dir dialog": "~/Dropbox/Mirror/Books",
+  "s_r_search_mode": 0,
+  "save to disk dialog": "~/Documents",
+  "sort_history": [
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "kindle",
+  "welcome_wizard_was_run": true
+}

@@ -1,0 +1,31 @@
+2025-04-04 13:15:20.701 [info] Started local extension host with pid 4399.
+2025-04-04 13:15:23.010 [error] Error while getting the latest version for the extension dbaeumer.vscode-eslint. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:23.011 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:23.012 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:23.012 [error] Error while getting the latest version for the extension fey.oscura. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:23.013 [error] Error while getting the latest version for the extension haudraufhaun.hyper-is-theme. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:23.014 [error] Error while getting the latest version for the extension jdinhlife.gruvbox. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:23.014 [error] Error while getting the latest version for the extension mvllow.rose-pine. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:23.021 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:23.188 [warning] Creation of workbench contribution 'workbench.contrib.configurationMigration' took 123ms.
+2025-04-04 13:15:23.427 [info] [perf] Render performance baseline is 30ms
+2025-04-04 13:15:43.704 [info] Started local extension host with pid 4570.
+2025-04-04 13:15:46.202 [error] Error while getting the latest version for the extension dbaeumer.vscode-eslint. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:46.202 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:46.202 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:46.202 [error] Error while getting the latest version for the extension fey.oscura. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:46.203 [error] Error while getting the latest version for the extension haudraufhaun.hyper-is-theme. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:46.203 [error] Error while getting the latest version for the extension jdinhlife.gruvbox. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:46.203 [error] Error while getting the latest version for the extension mvllow.rose-pine. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:46.203 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-04-04 13:15:46.434 [info] [perf] Render performance baseline is 32ms
+2025-04-04 13:29:06.898 [error] TextModel got disposed before DiffEditorWidget model got reset: Error: TextModel got disposed before DiffEditorWidget model got reset
+    at xie.value (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:405:142590)
+    at E.B (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2392)
+    at E.C (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2462)
+    at E.fire (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2680)
+    at Cf.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:249:21070)
+    at CUe.destroyModel (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:836:969)
+    at jme.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:660:10188)
+    at jme.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1797:19753)
+    at vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1797:21697

@@ -1,0 +1,35 @@
+2025-05-02 18:30:46.835 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-02 18:30:46.847 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-python-envs' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-02 18:30:46.848 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatReadonlyPromptReference' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-02 18:30:47.037 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-05-02 18:30:47.147 [info] Started local extension host with pid 10467.
+2025-05-02 18:30:48.085 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-05-02 18:30:50.167 [info] [perf] Render performance baseline is 25ms
+2025-05-02 18:31:18.049 [error] Cannot register two commands with the same id: _workbench.openUserSettingsEditor: Error: Cannot register two commands with the same id: _workbench.openUserSettingsEditor
+    at A (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:34:31760)
+    at t (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1864:81497)
+    at Hse.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1864:81817)
+    at E.B (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2392)
+    at E.C (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2462)
+    at E.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2680)
+    at aqs.updateCurrentProfile (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3211:89449)
+    at UGe.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1840:76868)
+    at async UGe.switchProfile (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1840:76180)
+    at async Dgt.r (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3215:5919)
+2025-05-02 18:31:18.264 [info] Started local extension host with pid 10780.
+2025-05-02 18:31:19.031 [info] Auto updating outdated extensions. dbaeumer.vscode-eslint, enkia.tokyo-night, esbenp.prettier-vscode, fey.oscura, haudraufhaun.hyper-is-theme, jdinhlife.gruvbox, mvllow.rose-pine, vscodevim.vim
+2025-05-02 18:31:19.080 [info] Auto updating outdated extensions. dbaeumer.vscode-eslint, enkia.tokyo-night, esbenp.prettier-vscode, fey.oscura, haudraufhaun.hyper-is-theme, jdinhlife.gruvbox, mvllow.rose-pine, vscodevim.vim
+2025-05-02 18:31:20.576 [info] Auto update consent required for extension dbaeumer.vscode-eslint
+2025-05-02 18:31:21.676 [info] Auto update consent required for extension esbenp.prettier-vscode
+2025-05-02 18:31:25.740 [info] Auto update consent required for extension vscodevim.vim
+2025-05-02 18:31:25.741 [info] Auto updating extension enkia.tokyo-night
+2025-05-02 18:31:25.742 [info] Auto updating extension fey.oscura
+2025-05-02 18:31:25.742 [info] Auto updating extension haudraufhaun.hyper-is-theme
+2025-05-02 18:31:25.742 [info] Auto updating extension jdinhlife.gruvbox
+2025-05-02 18:31:25.742 [info] Auto updating extension mvllow.rose-pine
+2025-05-02 18:31:25.931 [error] Cannot read the extension from /home/bianca/.vscode/extensions/enkia.tokyo-night-1.1.2-universal: ScanningExtension: Cannot read the extension from /home/bianca/.vscode/extensions/enkia.tokyo-night-1.1.2-universal
+    at wh.scanLocalExtension (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:72727)
+2025-05-02 18:31:25.936 [error] Cannot read the extension from /home/bianca/.vscode/extensions/fey.oscura-0.1.4-universal: ScanningExtension: Cannot read the extension from /home/bianca/.vscode/extensions/fey.oscura-0.1.4-universal
+    at wh.scanLocalExtension (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:72727)
+2025-05-02 18:31:25.939 [error] Cannot read the extension from /home/bianca/.vscode/extensions/haudraufhaun.hyper-is-theme-0.1.1-universal: ScanningExtension: Cannot read the extension from /home/bianca/.vscode/extensions/haudraufhaun.hyper-is-theme-0.1.1-universal
+    at wh.scanLocalExtension (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:72727)

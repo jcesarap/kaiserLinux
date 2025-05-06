@@ -1,0 +1,28 @@
+[Default Applications]
+video/webm=org.videolan.VLC.desktop
+x-scheme-handler/http=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+x-scheme-handler/ftp=org.mozilla.firefox
+x-scheme-handler/chrome=org.mozilla.firefox
+text/html=chromium.desktop
+application/x-extension-htm=org.mozilla.firefox
+application/x-extension-html=org.mozilla.firefox
+application/x-extension-shtml=org.mozilla.firefox
+application/xhtml+xml=org.mozilla.firefox
+application/x-extension-xhtml=org.mozilla.firefox
+application/x-extension-xht=org.mozilla.firefox
+image/jpeg=org.gnome.Loupe.desktop
+video/x-matroska=org.videolan.VLC.desktop
+text/plain=codium.desktop
+image/png=org.gnome.Loupe.desktop
+image/webp=org.gnome.Loupe.desktop
+x-scheme-handler/about=chromium.desktop
+x-scheme-handler/unknown=chromium.desktop
+
+[Added Associations]
+video/webm=org.videolan.VLC.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+video/x-matroska=org.videolan.VLC.desktop;
+text/plain=codium.desktop;
+image/png=org.gnome.Loupe.desktop;
+image/webp=org.gnome.Loupe.desktop;

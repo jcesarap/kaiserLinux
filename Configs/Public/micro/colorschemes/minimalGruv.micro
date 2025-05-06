@@ -1,0 +1,29 @@
+color-link default "#ebdbb2,transparent"            # Light beige for default text
+color-link comment "#928374,transparent"            # Greyish-brown for comments
+color-link identifier "#d79921,transparent"         # Goldenrod for identifiers
+color-link constant "#b57614,transparent"           # Darker brown for constants
+color-link constant.string "#b8bb26,transparent"    # Olive green for string constants
+color-link constant.string.char "#d5c4a1,transparent" # Lighter beige for char constants
+color-link statement "#d79921,transparent"          # Goldenrod for statements
+color-link preproc "#fb4934,transparent"            # Red for preprocessor directives
+color-link type "#b57614,transparent"               # Darker brown for types
+color-link special "#b57614,transparent"            # Darker brown for special items
+color-link underlined "#fabd2f,transparent"         # Yellow-orange for underlined text
+color-link error "bold #fb4934,transparent"         # Bold red for errors
+color-link todo "bold #d5c4a1,transparent"          # Bold light beige for todo
+color-link hlsearch "#282828,#d79921"               # Dark gray background with goldenrod for search highlight
+color-link statusline "#928374,transparent"         # Greyish-brown for status line
+color-link indent-char "#3c3836,transparent"        # Very dark gray for indent chars
+color-link line-number "#928374,transparent"        # Greyish-brown for line numbers
+color-link current-line-number "#b8bb26,transparent" # Olive green for current line number
+color-link diff-added "#b8bb26"                     # Olive green for added lines
+color-link diff-modified "#fabd2f"                  # Yellow-orange for modified lines
+color-link diff-deleted "#fb4934"                   # Red for deleted lines
+color-link gutter-error "#fb4934,transparent"       # Red for gutter errors
+color-link gutter-warning "#fabd2f,transparent"     # Yellow-orange for gutter warnings
+color-link cursor-line "#1d2021"                    # Very dark gray for cursor line
+color-link color-column "#3c3836"                   # Very dark gray for color column
+color-link symbol "#8ec07c,transparent"             # Soft green for symbols
+color-link match-brace "#282828,#b57614"            # Dark gray background with darker brown for matched braces
+color-link tab-error "#fb4934"                      # Red for tab errors
+color-link trailingws "#fb4934"                     # Red for trailing whitespace

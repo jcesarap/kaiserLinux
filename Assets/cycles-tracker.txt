@@ -1,0 +1,8 @@
+# In Unix Epoch - Seconds since 00:00:00 UTC on 1 January 1970
+timeshift:1742945306
+10m:1746212127
+30m:1746211693
+12h:1746212262
+3 months:1745684399
+uza:1746123468
+draw:1746123469

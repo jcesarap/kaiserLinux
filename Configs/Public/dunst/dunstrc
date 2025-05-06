@@ -1,0 +1,18 @@
+[global]
+font = Nasalization 12
+background = "#ffffff"
+foreground = "#000000"
+corner_radius = 10
+frame_width=0
+
+[urgency_low]
+background = "#ffffff"
+foreground = "#000000"
+
+[urgency_normal]
+background = "#ffffff"
+foreground = "#000000"
+
+[urgency_critical]
+background = "#000000"
+foreground = "#ff0000"

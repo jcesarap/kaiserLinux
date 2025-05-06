@@ -1,0 +1,31 @@
+general {
+    colors = false
+    interval = 10
+}
+
+order += "tztime local"
+order += "battery all"
+
+battery all {
+    format = "  %status %percentage  "
+    format_down = "•"
+    status_chr = "+"
+    status_bat = "-"
+    status_unk = "? UNK"
+    status_full = "+"
+    integer_battery_capacity = true
+    separator = false
+}
+
+volume master {
+    format = "   %volume⠀⠀"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+    separator = false
+}
+
+tztime local {
+    format = " %Hh%Mm   "
+    separator = false
+}

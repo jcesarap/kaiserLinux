@@ -1,0 +1,10 @@
+2025-04-07 00:39:13.283 [info] Started local extension host with pid 73198.
+2025-04-07 00:39:15.690 [error] Error while getting the latest version for the extension dbaeumer.vscode-eslint. Cannot read properties of undefined (reading 'replace')
+2025-04-07 00:39:15.692 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-04-07 00:39:15.693 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-04-07 00:39:15.694 [error] Error while getting the latest version for the extension fey.oscura. Cannot read properties of undefined (reading 'replace')
+2025-04-07 00:39:15.695 [error] Error while getting the latest version for the extension haudraufhaun.hyper-is-theme. Cannot read properties of undefined (reading 'replace')
+2025-04-07 00:39:15.695 [error] Error while getting the latest version for the extension jdinhlife.gruvbox. Cannot read properties of undefined (reading 'replace')
+2025-04-07 00:39:15.699 [error] Error while getting the latest version for the extension mvllow.rose-pine. Cannot read properties of undefined (reading 'replace')
+2025-04-07 00:39:15.700 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-04-07 00:39:16.062 [info] [perf] Render performance baseline is 56ms

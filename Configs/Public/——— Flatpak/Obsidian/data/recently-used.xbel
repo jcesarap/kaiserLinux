@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file://~/Downloads/Sketch-Litill.pdf" added="2024-12-22T03:05:03.446715Z" modified="2024-12-22T03:05:03.446723Z" visited="2024-12-22T03:05:03.446716Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="obsidian" exec="&apos;obsidian %u&apos;" modified="2024-12-22T03:05:03.446719Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file://~/Downloads/Sketch-Litill%20-%20Teste-Demonstra%C3%A7%C3%A3o.pdf" added="2024-12-22T03:11:08.565156Z" modified="2024-12-22T03:11:08.565169Z" visited="2024-12-22T03:11:08.565158Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="obsidian" exec="&apos;obsidian %u&apos;" modified="2024-12-22T03:11:08.565163Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file://~/Downloads/Demo-Flows" added="2024-12-22T03:58:22.227637Z" modified="2024-12-22T03:58:22.227643Z" visited="2024-12-22T03:58:22.227637Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="obsidian" exec="&apos;obsidian %u&apos;" modified="2024-12-22T03:58:22.227639Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

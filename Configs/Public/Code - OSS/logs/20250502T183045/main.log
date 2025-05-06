@@ -1,0 +1,7 @@
+2025-05-02 18:30:45.803 [error] Invalid path provided: /~/Workspace-Magn/Estructured Programming/bibtela, ENOENT: no such file or directory, stat '/~/Workspace-Magn/Estructured Programming/bibtela'
+2025-05-02 18:30:45.880 [info] update#setState idle
+2025-05-02 18:31:15.880 [info] update#setState checking for updates
+2025-05-02 18:31:16.113 [info] update#setState idle
+2025-05-02 18:31:18.066 [info] Extension host with pid 10467 exited with code: 0, signal: unknown.
+2025-05-02 18:31:36.286 [info] Extension host with pid 10780 exited with code: 0, signal: unknown.
+2025-05-02 18:31:36.295 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 10448]: crashed with code 15 and reason 'killed'

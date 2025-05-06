@@ -1,0 +1,39 @@
+touch t.txt
+trash
+mkdir test1
+mkdir test2
+touch 1
+rename 1.md
+search i3
+search back
+touch tr
+mkdir transfer
+
+open_with 3
+rename .snap
+rename .snap.txt
+rename .snap.sh
+rename snap.sh
+search hypr
+rename Coding.sh
+rename Index of Condensing.md
+search fast
+search
+touch 
+mkdir nixpkgs
+touch packages.nix
+touch config.nix
+search nix
+mkdir nixos
+search X11
+rename ——— Homework
+rename Info
+rename 1st Fluxogram.png
+rename Eht-Logic-1.md
+touch Paced-after-test.md
+search Fla
+touch move_cursor_to_focused.sh
+delete
+rename rose.png
+mkdir bibtela
+rename Hello_TUI

@@ -1,0 +1,137 @@
+; Full-bar
+
+[colors]
+bar_bg = ${xrdb:color0}
+bar_fg = #FFFFFF
+border_col = #00000000
+modules_bg = #F0F0F000
+modules_fg = #000000
+mod_bg = #F0F0F000
+modules_prefix_bg = #F0F0F000
+modules_prefix_fg = #000000
+urgent_bg  = #FF0000
+focused_bg = #00000000
+workspace_bg = ${xrdb:color0} 
+workspace_focused_bg = ${xrdb:color0} 
+workspace_unfocused_bg = ${xrdb:color0}
+workspace_urgent_bg = #FF0000
+
+[bar/mybar_internal]
+monitor = eDP1
+; --- DIMENSIONS
+dpi      = 192
+height   = 20
+; width = 400
+; --- POSITION
+bottom = false
+layer = bottom
+;disable-encoding = true
+;override-redirect = true
+;wm-restack = i3
+; --- CONTENT
+modules-right  = battery-combined-udev
+modules-center  = date
+modules-left  = workspaces
+fixed-center = true
+spacing            = 0
+padding-left       = 1
+padding-right      = 3
+module-margin-left = 0
+border-bottom-size  = 0
+border-top-size     = 0
+border-left-size  = 0
+border-right-size = 0
+; --- COLOURS
+background = ${colors.bar_bg}
+foreground = ${colors.bar_fg}
+border-bottom-color = ${colors.border_col}
+border-top-color    = ${colors.border_col}
+border-left-color  = ${colors.border_col}
+border-right-color = ${colors.border_col}
+; --- FONT
+font-N = <fontconfig pattern>;<vertical offset>
+font-0 = Nasalization:size=4;0 
+font-1 = Nasalization:pixelsize=9;1
+font-2 = Nasalization:size=4;0 
+
+
+[bar/mybar_external]
+monitor = HDMI-1-0
+; --- DIMENSIONS
+dpi      = 192
+height   = 20
+;width = 400
+; --- POSITION
+bottom = false
+layer = bottom
+;disable-encoding = true
+;override-redirect = true
+;wm-restack = i3
+; --- CONTENT
+modules-right  = battery-combined-udev
+modules-center  = date
+modules-left  = workspaces
+fixed-center = true
+spacing            = 0
+padding-left       = 0
+padding-right      = 3
+module-margin-left = 0
+border-bottom-size  = 0
+border-top-size     = 0
+border-left-size  = 0
+border-right-size = 0
+; --- COLOURS
+background = ${colors.bar_bg}
+foreground = ${colors.bar_fg}
+border-bottom-color = ${colors.border_col}
+border-top-color    = ${colors.border_col}
+border-left-color  = ${colors.border_col}
+border-right-color = ${colors.border_col}
+; --- FONT
+font-N = <fontconfig pattern>;<vertical offset>
+font-0 = Nasalization:size=4;0 
+font-1 = Nasalization:pixelsize=9;1
+font-2 = Nasalization:size=4;0 
+
+[module/workspaces]
+type            = internal/i3
+format          = <label-state>
+index-sort      = true
+wrapping-scroll = false
+strip-wsnumbers = true
+label-mode-background = ${colors.workspace_bg}
+label-mode-foreground = ${colors.bar_fg}
+label-mode-padding    = 0
+label-focused            = %name%
+label-focused-background = ${colors.workspace_focused_bg}
+label-focused-foreground = #FFFFFF
+label-focused-padding    = 5
+label-unfocused            = %name%
+label-unfocused-background = ${colors.workspace_unfocused_bg}
+label-unfocused-foreground = #696A6A
+label-unfocused-padding    = 5
+label-visible            = %name%
+label-visible-background = ${colors.workspace_bg}
+label-visible-foreground = ${colors.bar_fg}
+label-visible-padding    = 5
+label-urgent            = %name%
+label-urgent-background = ${colors.workspace_urgent_bg}
+label-urgent-foreground = ${colors.bar_fg}
+label-urgent-padding    = 5
+; Related to showing only bars related to monitor
+pin-workspaces = true
+
+[module/date]
+type = internal/date
+; Seconds to sleep between updates
+interval = 1.0
+time = %H:%M
+label = %date% %time%
+label-font = 3
+label-foreground = #ffffff
+label-padding = 10
+
+[module/battery-combined-udev]
+type = custom/script
+exec = "~/Dropbox/Kaiser-Linux/Configs/Public/polybar/polybar.sh"
+tail = true

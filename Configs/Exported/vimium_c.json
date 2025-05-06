@@ -1,0 +1,31 @@
+{
+	"name": "Vimium C",
+	"@time": "02/10/2024, 11:03:16",
+	"time": 1727877796374,
+	"environment": {
+		"extension": "1.99.997",
+		"platform": "linux",
+		"firefox": 131
+	},
+	"exclusionListenHash": false,
+	"exclusionOnlyFirstMatch": true,
+	"exclusionRules": [
+		{
+			"passKeys": "1 5 7 8 f ",
+			"pattern": "^https?://www\\.youtube\\.com/watch"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"unmap /",
+		"unmap t",
+		"unmap T",
+		"unmap m",
+		"unmap b",
+		"unmap o",
+		"map i enterFindMode",
+		""
+	],
+	"vimSync": true
+}

@@ -1,0 +1,17 @@
+2025-04-05 10:15:52.347 [info] Extension host with pid 9248 started
+2025-04-05 10:15:52.347 [info] Skipping acquiring lock for ~/.config/Code - OSS/User/workspaceStorage/8e36d207d15d8705e1eab70559648a85.
+2025-04-05 10:15:52.423 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-04-05 10:15:52.485 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-04-05 10:15:52.572 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-05 10:15:52.649 [info] Eager extensions activated
+2025-04-05 10:15:52.666 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-05 10:15:52.669 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-05 10:15:52.691 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-04-05 10:15:52.730 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-04-05 10:15:52.801 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-04-05 10:15:56.580 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-04-05 10:15:56.603 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-04-05 10:15:56.723 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-04-05 10:15:57.207 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-04-05 10:16:34.563 [info] Extension host terminating: renderer closed the MessagePort
+2025-04-05 10:16:34.578 [info] Extension host with pid 9248 exiting with code 0

@@ -1,0 +1,115 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd extendedglob notify
+unsetopt beep
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '~/.zshrc'
+autoload -Uz compinit
+compinit
+
+
+
+# One of the best functions of zsh is TAB to show suggestions of commands
+
+
+
+
+
+# Redirect output to be accessible via nvim - At Alt+Shift+´
+# Log every command to a file
+#function log_command() {
+#  echo "————————————————————————\n# ———— Command:\n$1\n\n# ———— Output\n" >> ~/.bash_to_nvim.txt
+#  eval $1 >> ~/.bash_to_nvim.txt 2>&1
+#}
+#
+## Hook to log commands before they are executed
+#preexec() {
+#  log_command "$1"
+#}
+
+
+# End of lines added by compinstall
+
+# --- --- --- Bash imports
+
+# Text editor for shell
+export VISUAL=nvim
+export EDITOR=nvim
+export PATH=$PATH:/usr/local/go/bin
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git --exclude ~/.Snapshots' # So you don't edit files which are soon overwritten
+export __NV_PRIME_RENDER_OFFLOAD=1
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export __VK_LAYER_NV_optimus=NVIDIA_only
+export EXT_MONITOR="HDMI-1-0"
+export INT_MONITOR="eDP1"
+
+# User specific environment and startup programs
+if [ -d "/var/lib/flatpak/exports/bin" ]; then
+    PATH="/var/lib/flatpak/exports/bin:$PATH"
+fi
+
+# Nix profile setup
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then
+    source ~/.nix-profile/etc/profile.d/nix.sh
+fi # added by Nix installer
+
+# Source global definitions (for zsh, this file is typically /etc/zshrc or similar)
+if [ -f /etc/zshrc ]; then
+    source /etc/zshrc
+fi
+
+# User-specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+
+# Aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias r='ranger .'
+alias m='bash ~/Dropbox/Kaiser-Linux/Scripts/menu.sh bash'
+alias s='rg --line-number --no-heading --color=always "" | fzf --ansi --delimiter : --nth 2.. | while IFS=: read -r file line _; do [[ -n "$file" ]] && nvim +"$line" "$file"; done'
+alias c='~/Dropbox/Kaiser-Linux/Scripts/DE/quick_compile.sh'
+
+# --- Modifications
+
+# Pywal: Import colorscheme from 'wal' asynchronously
+# & Run the process in the background; ( ) Hide shell job control messages.
+(cat ~/.cache/wal/sequences &)
+cat ~/.cache/wal/sequences # Alternative (blocks terminal for 0-3ms)
+source ~/.cache/wal/colors-tty.sh # Optional: Adds support for TTYs
+
+# --- Message
+cat << EOF
+
+  þérs'av Strømrav
+  Breath
+  Versai
+EOF
+
+# --- Service Checking
+if pgrep -x "dropbox" > /dev/null && pgrep -x "syncthing" > /dev/null; then
+    echo " "
+else
+    echo -e "\033[0;31m — Daemons - Fail / Press m for menu \033[0m"  # Red message if services are not running
+fi
+
+precmd() { print "\n" }
+PROMPT='  %~  '
+
+# Move cursor by word
+bindkey "^[[1;5D" backward-word  # Ctrl+Left Arrow
+bindkey "^[[1;5C" forward-word   # Ctrl+Right Arrow
+
+# Home and End keys
+bindkey "^[[H" beginning-of-line  # Home key
+bindkey "^[[F" end-of-line        # End key
+# --- Post Output
+
+nohup ~/Dropbox/Kaiser-Linux/Scripts/DE/cycles.sh calculate_cycles > /dev/null 2>&1 &! 
+nohup ~/Dropbox/Kaiser-Linux/Scripts/DE/eye.sh > /dev/null 2>&1 &! 

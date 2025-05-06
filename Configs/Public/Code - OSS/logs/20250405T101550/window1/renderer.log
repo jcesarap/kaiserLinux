@@ -1,0 +1,20 @@
+2025-04-05 10:15:51.550 [info] Started local extension host with pid 9248.
+2025-04-05 10:15:53.942 [error] Error while getting the latest version for the extension dbaeumer.vscode-eslint. Cannot read properties of undefined (reading 'replace')
+2025-04-05 10:15:53.942 [error] Error while getting the latest version for the extension enkia.tokyo-night. Cannot read properties of undefined (reading 'replace')
+2025-04-05 10:15:53.943 [error] Error while getting the latest version for the extension esbenp.prettier-vscode. Cannot read properties of undefined (reading 'replace')
+2025-04-05 10:15:53.943 [error] Error while getting the latest version for the extension fey.oscura. Cannot read properties of undefined (reading 'replace')
+2025-04-05 10:15:53.943 [error] Error while getting the latest version for the extension haudraufhaun.hyper-is-theme. Cannot read properties of undefined (reading 'replace')
+2025-04-05 10:15:53.943 [error] Error while getting the latest version for the extension jdinhlife.gruvbox. Cannot read properties of undefined (reading 'replace')
+2025-04-05 10:15:53.944 [error] Error while getting the latest version for the extension mvllow.rose-pine. Cannot read properties of undefined (reading 'replace')
+2025-04-05 10:15:53.944 [error] Error while getting the latest version for the extension vscodevim.vim. Cannot read properties of undefined (reading 'replace')
+2025-04-05 10:15:54.301 [info] [perf] Render performance baseline is 23ms
+2025-04-05 10:16:27.555 [error] TextModel got disposed before DiffEditorWidget model got reset: Error: TextModel got disposed before DiffEditorWidget model got reset
+    at xie.value (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:405:142590)
+    at E.B (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2392)
+    at E.C (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2462)
+    at E.fire (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:29:2680)
+    at Cf.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:249:21070)
+    at CUe.destroyModel (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:836:969)
+    at jme.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:660:10188)
+    at jme.dispose (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1797:19753)
+    at vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1797:21697

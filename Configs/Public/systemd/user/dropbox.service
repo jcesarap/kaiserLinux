@@ -1,0 +1,11 @@
+[Unit]
+Description=Dropbox Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/dropbox start
+ExecStop=/usr/bin/dropbox stop
+Restart=always
+
+[Install]
+WantedBy=default.target

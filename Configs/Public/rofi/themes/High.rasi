@@ -1,0 +1,72 @@
+/*
+
+
+# Dark Nordic
+bg: #1c1c1c;
+bg-alt: #2e3440;
+fg: #d8dee9;
+fg-alt: #e5e9f0;
+border-color: #1e1e1e;
+
+*/
+
+@import "~/.cache/wal/colors-rofi-dark"
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+  bg: #151515;
+  bg-alt: #232323;
+  fg: #FFFFFF;
+  fg-alt: #424242;
+  border-color: #424242;
+  background-color: @bg;
+  text-color: @fg-alt;
+  font: "Nasalization 12";
+}
+
+window {
+  transparency: "real";
+  width: 17%; /* Full width of the screen */
+  border: 1px;
+  border-radius:  20px 20px 20px 20px;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  children: [entry];
+}
+
+entry {
+  padding: 16px;
+  font: "Nasalization 16";
+}
+
+listview {
+  lines: 6;
+  scrollbar: false;
+}
+
+scrollbar {
+  background-color: @bg-alt;
+  handle-color: @fg;
+  margin: 0 0 0 6px;
+}
+
+element {
+  children: [element-text];
+}
+
+element-text {
+  padding: 20px;
+}
+
+element-text selected {
+  //background-color: @bg-alt;
+  text-color: @fg;
+}

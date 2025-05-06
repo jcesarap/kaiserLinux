@@ -1,0 +1,31 @@
+2025-03-24 04:09:19.699 [info] Extension host with pid 54231 started
+2025-03-24 04:09:19.699 [info] Skipping acquiring lock for ~/.config/Code - OSS/User/workspaceStorage/43a892440f172a5c40040343e4bd1d21.
+2025-03-24 04:09:19.724 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-03-24 04:09:19.729 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-03-24 04:09:19.786 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-03-24 04:09:19.839 [info] Eager extensions activated
+2025-03-24 04:09:19.855 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-24 04:09:19.858 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-24 04:09:19.875 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-03-24 04:09:19.910 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-03-24 04:09:19.986 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-03-24 04:09:26.868 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-03-24 04:09:26.882 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-03-24 04:09:26.980 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-24 04:09:27.329 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-03-24 04:09:31.690 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-03-24 04:11:26.389 [info] Extension host terminating: renderer closed the MessagePort
+2025-03-24 04:11:26.407 [error] TypeError: r.some is not a function
+	at h.saveToDisk (~/.vscode-oss/extensions/vscodevim.vim-1.29.0-universal/out/extension.js:2:663045)
+	at t.deactivate (~/.vscode-oss/extensions/vscodevim.vim-1.29.0-universal/out/extension.js:2:177330)
+	at zz.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:11726)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+	at Array.map (<anonymous>)
+	at zz.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+	at zz.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+	at OI.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-03-24 04:11:26.408 [info] Extension host with pid 54231 exiting with code 0

@@ -1,0 +1,54 @@
+conky.config = {
+    -- General settings
+    background = true,
+    update_interval = 1.0,
+    double_buffer = true,
+    no_buffers = true,
+    text_buffer_size = 1024,
+
+    -- Window settings
+    own_window = true,
+    own_window_type = 'desktop',  -- Ensure Conky is treated as a desktop widget
+    own_window_transparent = true,
+    own_window_class = 'Conky',
+    own_window_title = 'Conky',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+    -- Alignment and Positioning
+    alignment = 'bottom_right',
+    gap_x = 30,
+    gap_y = 30,
+    minimum_width = 200, minimum_height = 100,
+
+    -- Appearance
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = false,
+    default_color = 'white',
+    default_shade_color = 'black',
+    default_outline_color = 'black',
+    own_window_argb_visual = true,
+    own_window_argb_value = 0,  -- Adjust transparency (0 is fully transparent, 255 is fully opaque)
+
+    -- Text settings
+    use_xft = true,
+    xftalpha = 0.8,
+    font = 'Nasalization:size=10',  -- Changed font to Nasalization
+};
+
+conky.text = [[
+${color grey}${font Nasilization:size=14} ${font Nasilization:size=14}${time %H:%M}${font}
+    ${color grey}${font Nasilization:size=10}Volume${font}${color} ${execi 1 amixer get Master | grep -o '[0-9]*%' | head -1}
+    ${color grey}${font Nasilization:size=10}Battery${font}${color} ${battery_percent BAT0}%
+
+  Load
+
+    ${color grey}${font Nasilization:size=10}CPU${font}${color} ${cpubar}
+    ${color grey}${font Nasilization:size=10}RAM${font}${color} ${membar}
+
+  Temperatures
+	
+    ${color grey}${font Nasilization:size=10}(CPU)${font}${color} ${execi 10 sensors | grep 'Core 0' | awk '{print substr($3, 2)}'}
+    ${color grey}${font Nasilization:size=10}(GPU)${font}${color} ${execi 10 nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits}°C
+]];

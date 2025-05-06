@@ -1,0 +1,11 @@
+[Unit]
+Description=Disable Ideapad Gaming 3i touchpad PM to work around input delays
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "echo on > /sys/bus/i2c/devices/i2c-ELAN0001:00/power/control"
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,30 @@
+2025-04-07 00:39:14.102 [info] Extension host with pid 73198 started
+2025-04-07 00:39:14.102 [info] Skipping acquiring lock for ~/.config/Code - OSS/User/workspaceStorage/8e36d207d15d8705e1eab70559648a85.
+2025-04-07 00:39:14.274 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-04-07 00:39:14.314 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-04-07 00:39:14.341 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-04-07 00:39:15.122 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-04-07 00:39:15.153 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-04-07 00:39:15.229 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-04-07 00:39:15.373 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-07 00:39:15.470 [info] Eager extensions activated
+2025-04-07 00:39:15.498 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-07 00:39:15.502 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-07 00:39:15.529 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-04-07 00:39:15.589 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-04-07 00:39:15.730 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-04-07 00:40:10.357 [info] Extension host terminating: renderer closed the MessagePort
+2025-04-07 00:40:10.372 [error] TypeError: r.some is not a function
+	at h.saveToDisk (~/.vscode-oss/extensions/vscodevim.vim-1.29.0-universal/out/extension.js:2:663045)
+	at t.deactivate (~/.vscode-oss/extensions/vscodevim.vim-1.29.0-universal/out/extension.js:2:177330)
+	at zz.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:11726)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+	at Array.map (<anonymous>)
+	at zz.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+	at zz.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+	at OI.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-04-07 00:40:10.373 [info] Extension host with pid 73198 exiting with code 0

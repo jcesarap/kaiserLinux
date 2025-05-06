@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Ardour
+Comment=Digital Audio Workstation
+Exec=~/Workspace-Magn/gtk2_ardour/ardev
+Icon=ardour
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;Music;

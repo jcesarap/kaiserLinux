@@ -1,0 +1,43 @@
+2025-05-02 18:31:25.746 [info] Getting Manifest... enkia.tokyo-night
+2025-05-02 18:31:25.747 [info] Getting Manifest... fey.oscura
+2025-05-02 18:31:25.748 [info] Getting Manifest... haudraufhaun.hyper-is-theme
+2025-05-02 18:31:25.750 [info] Getting Manifest... jdinhlife.gruvbox
+2025-05-02 18:31:25.751 [info] Getting Manifest... mvllow.rose-pine
+2025-05-02 18:31:25.804 [info] Installing extension: enkia.tokyo-night {"productVersion":{"version":"1.99.3","date":"2025-04-15T23:18:46.076Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","path":"/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","scheme":"vscode-userdata"}}
+2025-05-02 18:31:25.808 [info] Installing extension: jdinhlife.gruvbox {"productVersion":{"version":"1.99.3","date":"2025-04-15T23:18:46.076Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","path":"/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","scheme":"vscode-userdata"}}
+2025-05-02 18:31:25.809 [info] Installing extension: mvllow.rose-pine {"productVersion":{"version":"1.99.3","date":"2025-04-15T23:18:46.076Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","path":"/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","scheme":"vscode-userdata"}}
+2025-05-02 18:31:25.809 [info] Installing extension: fey.oscura {"productVersion":{"version":"1.99.3","date":"2025-04-15T23:18:46.076Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","path":"/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","scheme":"vscode-userdata"}}
+2025-05-02 18:31:25.810 [info] Installing extension: haudraufhaun.hyper-is-theme {"productVersion":{"version":"1.99.3","date":"2025-04-15T23:18:46.076Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","path":"/home/bianca/.config/Code/User/profiles/-62370058/extensions.json","scheme":"vscode-userdata"}}
+2025-05-02 18:31:25.928 [error] Error while installing the extension enkia.tokyo-night Cannot read the extension from /home/bianca/.vscode/extensions/enkia.tokyo-night-1.1.2-universal vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json
+2025-05-02 18:31:25.934 [error] Error while installing the extension fey.oscura Cannot read the extension from /home/bianca/.vscode/extensions/fey.oscura-0.1.4-universal vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json
+2025-05-02 18:31:25.937 [error] Error while installing the extension haudraufhaun.hyper-is-theme Cannot read the extension from /home/bianca/.vscode/extensions/haudraufhaun.hyper-is-theme-0.1.1-universal vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json
+2025-05-02 18:31:27.728 [info] Extension signature verification result for jdinhlife.gruvbox: Success. Internal Code: 0. Executed: true. Duration: 1229ms.
+2025-05-02 18:31:27.757 [info] Extension signature verification result for mvllow.rose-pine: Success. Internal Code: 0. Executed: true. Duration: 1334ms.
+2025-05-02 18:31:27.781 [info] Extracted extension to file:///home/bianca/.vscode/extensions/jdinhlife.gruvbox-1.26.0: jdinhlife.gruvbox
+2025-05-02 18:31:27.785 [info] Extracted extension to file:///home/bianca/.vscode/extensions/mvllow.rose-pine-2.14.0: mvllow.rose-pine
+2025-05-02 18:31:27.935 [info] Renamed to /home/bianca/.vscode/extensions/jdinhlife.gruvbox-1.26.0
+2025-05-02 18:31:27.936 [info] Renamed to /home/bianca/.vscode/extensions/mvllow.rose-pine-2.14.0
+2025-05-02 18:31:27.950 [error] Error: Unable to read file '/home/bianca/.vscode/extensions/jdinhlife.gruvbox-1.24.6-universal/package.json' (Error: Unable to resolve nonexistent file '/home/bianca/.vscode/extensions/jdinhlife.gruvbox-1.24.6-universal/package.json')
+    at Sh.G (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:87336)
+    at Sh.F (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:87161)
+    at async Sh.D (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:86533)
+    at async da.u (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:44154)
+    at async da.scanExtension (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:42661)
+    at async Vu.scanExistingExtension (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:34856)
+    at async wh.scanUserExtensionAtLocation (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:68109)
+    at async Promise.all (index 0)
+    at async M2.C (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:57080)
+2025-05-02 18:31:27.951 [info] Extension not found at the location file:///home/bianca/.vscode/extensions/jdinhlife.gruvbox-1.24.6-universal
+2025-05-02 18:31:27.960 [error] Error: Unable to read file '/home/bianca/.vscode/extensions/mvllow.rose-pine-2.13.0-universal/package.json' (Error: Unable to resolve nonexistent file '/home/bianca/.vscode/extensions/mvllow.rose-pine-2.13.0-universal/package.json')
+    at Sh.G (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:87336)
+    at Sh.F (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:87161)
+    at async Sh.D (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:86533)
+    at async da.u (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:44154)
+    at async da.scanExtension (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:42661)
+    at async Vu.scanExistingExtension (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:34856)
+    at async wh.scanUserExtensionAtLocation (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:68109)
+    at async Promise.all (index 0)
+    at async M2.C (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:57080)
+2025-05-02 18:31:27.960 [info] Extension not found at the location file:///home/bianca/.vscode/extensions/mvllow.rose-pine-2.13.0-universal
+2025-05-02 18:31:27.968 [info] Extension installed successfully: jdinhlife.gruvbox vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json
+2025-05-02 18:31:27.970 [info] Extension installed successfully: mvllow.rose-pine vscode-userdata:/home/bianca/.config/Code/User/profiles/-62370058/extensions.json

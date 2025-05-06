@@ -1,0 +1,66 @@
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: var(background);                  /* Background color from previous theme */
+  bg-alt: var(background-alt);           /* Alternate background color */
+  scroll: var(handle-colour);            /* Scrollbar handle color */
+  fg: var(foreground);                   /* Foreground color */
+  fg-alt: var(foreground-alt);           /* Alternate foreground color */
+  border-color: var(border-colour);      /* Border color */
+  separatorcolor: var(border-colour);    /* Separator color */
+  background-color: var(background-colour); /* Background color */
+  text-color: var(foreground-colour);    /* Text color */
+  highlight: bold italic;
+  font: "Nasalization 12";
+}
+
+window {
+  border: 2px;
+  border-color: var(background);        /* Window border color */
+  padding: 6px;
+  transparency: "real";
+  x-offset: 0; /* Position from left edge */
+  y-offset: 0; /* Position from top edge */
+  width: 100%; /* Full width of the screen */
+  height: 100%; /* Full height of the screen */
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  children: [entry];
+}
+
+entry {
+  padding: 10px;
+}
+
+listview {
+  lines: 10;
+  scrollbar: true;
+}
+
+scrollbar {
+  background-color: var(handle-colour);  /* Scrollbar background */
+  handle-color: var(foreground);         /* Scrollbar handle color */
+  margin: 0 0 0 6px;
+}
+
+element {
+  children: [element-text];
+}
+
+element-text {
+  padding: 10px;
+}
+
+element-text selected {
+  background-color: var(background-alt);  /* Alternate background for selected element */
+  text-color: var(foreground);             /* Foreground color for selected element */
+}

@@ -1,0 +1,267 @@
+# Requires open-source (nouveau) Nvidia drivers. It won't run with propertary.
+# Don't use automatic swayidle - it's broken.
+# ---------------- Running rules
+
+# Sway settings
+set $mod Mod1
+set $mod4 Mod4
+
+# Font for window titles
+font pango:Nasalization,FontAwesome 09
+
+# Remove title bar, keep focus indicator
+for_window [class=".*"] border pixel 1
+
+# Set default inner and outer gaps
+gaps inner 7
+gaps outer 3
+
+# Wallpaper
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/Dropbox/Images-Art/Wallpapers/wp7294211-charts-wallpapers.jpg fill
+
+# Input
+input "2:14:SynPS/2_Synaptics_TouchPad" {
+    dwt enabled
+    tap enabled
+    natural_scroll enable
+    middle_emulation disable
+}
+input type:touchpad {
+    dwt enabled
+    tap enabled
+    natural_scroll enable
+    middle_emulation disable
+}
+input type:keyboard {
+    xkb_layout br
+}
+
+# Monitor/Display settings [$swaymsg -t get_outputs]
+output eDP1 resolution 1920x1080 position 1920,2160
+output HDMI-A-1 resolution 1920x1080 position 1920,1080
+
+# --------------- Screen-locking & Suspensions
+
+# Suspend shortcut
+bindsym $mod+Shift+l exec swaylock -i "~/Dropbox/Images-Art/Wallpapers/One-ring-to-rule-them-all-and-in-darkness-bind-them.jpg" & systemctl suspend
+
+# Lockscreen
+bindsym $mod+l exec swaylock -i "~/Dropbox/Images-Art/Wallpapers/One-ring-to-rule-them-all-and-in-darkness-bind-them.jpg"
+
+# ---------------- Startup
+# Just a safety measure
+exec --no-startup-id pkill picom && pkill clipit
+
+# Start XDG autostart .desktop files using dex
+exec --no-startup-id dex-autostart --autostart --environment i3
+# For file picker to work on Flatpak apps
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+# Polkit - explanation of what it's for, on packages.sh
+exec --no-startup-id lxpolkit
+
+# Dunst
+exec --no-startup-id dunst &
+
+# Clipboard
+exec --no-startup-id wl-clipboard || :
+exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
+
+# Dropbox
+exec --no-startup-id dropbox start &
+
+# Syncthing 
+exec --no-startup-id flatpak run com.github.zocker_160.SyncThingy & # Can't wait for this to finish, will run on background
+
+# Screenshot - Grimshot
+bindsym $mod+p exec grimshot save area.
+
+# ---------------- Main Shortcuts
+
+# Rofi
+# bindsym $mod+Ctrl+space exec rofi -show drun -m HDMI-A-1
+
+# Rofi - Query - EVOKED BY MENU
+#bindsym $mod+Shift+space exec sh ~/Dropbox/Kaiser-Linux/Scripts/rofi/query.sh
+
+# Rofi - Menu
+bindsym $mod+space exec sh ~/Dropbox/Kaiser-Linux/Scripts/rofi/menu.sh
+
+# Dunst - Dismiss notification
+bindsym $mod+Escape exec dunstctl close
+
+# Sound control
+# Amixer - 100% is maximum volume
+#bindsym F3 exec amixer set Master 10%+ && $refresh_i3status 
+#bindsym F2 exec amixer set Master 10%- && $refresh_i3status
+
+# Pulse Audio Control - 100%+
+bindsym F3 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +20% && $refresh_i3status
+bindsym F2 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -20% && $refresh_i3status
+
+# Media control
+bindsym $mod+F1 exec playerctl play-pause
+bindsym $mod+F2 exec playerctl previous
+bindsym $mod+F3 exec playerctl next
+
+# Brightness
+bindsym F6 exec --no-startup-id brightnessctl set +10%
+bindsym F5 exec --no-startup-id brightnessctl set 10%-
+
+# ---------------- Windows
+
+# Kill focused window
+bindsym Ctrl+q kill
+
+# Move focus - So you can have hjkl as arrow keys
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+# Move focus - Floating windows
+bindsym $mod+Return focus mode_toggle
+
+# Move windows
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Right move right
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+slash fullscreen toggle
+
+# Split in horizontal & vertical orientation
+bindsym $mod+Tab split toggle
+
+# Containers
+bindsym $mod+Shift+Tab layout toggle all
+
+# Drag floating windows: Mouse+$mod
+floating_modifier $mod
+
+# Floating toggle
+bindsym $mod+Ctrl+slash floating toggle
+
+# Floating window defaults
+### Run (xprop | grep WM_CLASS) in your terminal, then click on the application window. This will output the class name of the application.
+for_window [class="ksnip"] floating enable
+for_window [class="KeePassXC"] floating enable
+
+# Workspace defaults
+assign [class="firefox"] $ws7
+assign [class="ksnip"] $ws8
+assign [class="KeePassXC"] $ws8
+
+# ---------------- Workspaces
+
+# TOO MUCH WORK MANAGING MULTIPLE WORKSPACES ON DUAL MONITORS - STACK WINDOWS ON THE SECOND ONE, INSTEAD
+
+# Define names for default workspaces for which we configure key bindings later on.
+set $ws1 "1:Q"
+set $ws2 "2:W"
+set $ws3 "3:E"
+set $ws4 "4:A"
+set $ws5 "5:S"
+set $ws6 "6:D"
+set $ws7 "7:F"
+set $ws8 "8:•\•"
+#set $ws9 "9:C"
+
+# Dual-monitor settings
+workspace $ws1 output HDMI-A-1
+workspace $ws2 output HDMI-A-1
+workspace $ws3 output HDMI-A-1
+workspace $ws4 output HDMI-A-1
+workspace $ws5 output HDMI-A-1
+workspace $ws6 output HDMI-A-1
+# ↓ Firefox Workspace - Pinned, but moveable in case of (rare) need
+workspace $ws7 output HDMI-A-1
+# ↓ Laptop monitor (secondary)
+workspace $ws8 output eDP1
+# workspace $ws9 output eDP1
+
+# Switch to workspace
+bindsym $mod+q workspace number $ws1
+bindsym $mod+w workspace number $ws2
+bindsym $mod+e workspace number $ws3
+bindsym $mod+a workspace number $ws4
+bindsym $mod+s workspace number $ws5
+bindsym $mod+d workspace number $ws6
+# ↓ Firefox Workspace - Pinned, but moveable in case of (rare) need
+bindsym $mod+f workspace number $ws7
+# ↓ Laptop monitor (secondary)
+bindsym $mod+backslash workspace number $ws8
+# bindsym $mod+c workspace number $ws9
+
+# Move focused container to workspace
+bindsym $mod+Shift+q move container to workspace number $ws1
+bindsym $mod+Shift+w move container to workspace number $ws2
+bindsym $mod+Shift+e move container to workspace number $ws3
+bindsym $mod+Shift+a move container to workspace number $ws4
+bindsym $mod+Shift+s move container to workspace number $ws5
+bindsym $mod+Shift+d move container to workspace number $ws6
+# ↓ Firefox Workspace - Pinned, but moveable in case of (rare) need
+bindsym $mod+Shift+f move container to workspace number $ws7
+# ↓ Laptop monitor (secondary)
+bindsym $mod+Shift+backslash move container to workspace number $ws8
+# bindsym $mod+Shift+c move container to workspace number $ws9
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+
+        bindsym Right resize shrink width 10 px or 10 ppt
+        bindsym Up resize grow height 10 px or 10 ppt
+        bindsym Down resize shrink height 10 px or 10 ppt
+        bindsym Left resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+# ---------------- Program Shortcuts
+
+# File explorer
+bindsym $mod+bracketleft exec alacritty -e ranger
+
+# Terminal
+bindsym $mod+bracketright exec alacritty
+
+# Calculator
+bindsym $mod+F12 exec speedcrunch
+
+# ---------------- Appearance
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3status
+        tray_padding 3
+        strip_workspace_numbers yes
+        position bottom
+        #mode hide
+        #modifier Mod1
+        font pango:Nasalization,FontAwesome 10
+	colors {
+        background #282828
+        statusline  #fbf1c7
+        focused_workspace #fe8019 #fe8019 #ffffff
+    	active_workspace #98971a #98971a #fbf1c7
+    	inactive_workspace #282828 #282828 #ffffff
+    	urgent_workspace #fb2934 #fb2934 #ffffff
+    }
+}
+
+# --- Colours
+
+# class                 border backgr. text    indicator child_border
+client.focused          #fe8019 #282828 #d4be98 #ffffff   #fe8019
+client.focused_inactive #89b482 #282828 #d4be98 #89b482   #282828
+client.unfocused        #282828 #282828 #d4be98 #282828   #282828
+client.urgent           #ea6962 #282828 #d4be98 #ea6962   #ea6962
+client.placeholder      #282828 #282828 #d4be98 #282828   #282828

@@ -1,0 +1,34 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.cursorStyle": "block",
+    "workbench.statusBar.visible": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "cSpell.customDictionaries": {},
+    "cSpell.language": "en-GB",
+    "window.menuBarVisibility": "hidden",
+    "workbench.editor.enablePreview": false,
+    "editor.renderLineHighlight": "gutter",
+    "workbench.sideBar.location": "right",
+    "window.zoomLevel": -1,
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "Rubik",
+    "terminal.integrated.fontFamily": "monospace",
+    "breadcrumbs.enabled": false,
+    "cSpell.userWords": [
+        "undelayed"
+    ],
+    "chat.commandCenter.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "workbench.colorTheme": "Oscura Dusk",
+    "amVim.mimicVimSearchBehavior": false,
+    "amVim.useSystemClipboard": true,
+    "amVim.smartRelativeLineNumbers": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
+}

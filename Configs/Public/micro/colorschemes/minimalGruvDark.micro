@@ -1,0 +1,29 @@
+color-link default "#3c3836,transparent"            # Dark gray for default text (darkened for a light theme)
+color-link comment "#504945,transparent"            # Dark greyish-brown for comments
+color-link identifier "#d65d0e,transparent"         # Dark orange for identifiers
+color-link constant "#8f3f71,transparent"           # Dark magenta for constants
+color-link constant.string "#79740e,transparent"    # Dark olive green for string constants
+color-link constant.string.char "#3c3836,transparent" # Dark gray for char constants (same as default)
+color-link statement "#d65d0e,transparent"          # Dark orange for statements
+color-link preproc "#cc241d,transparent"            # Dark red for preprocessor directives
+color-link type "#8f3f71,transparent"               # Dark magenta for types
+color-link special "#8f3f71,transparent"            # Dark magenta for special items
+color-link underlined "#d79921,transparent"         # Goldenrod for underlined text
+color-link error "bold #cc241d,transparent"         # Bold dark red for errors
+color-link todo "bold #7c6f64,transparent"          # Bold dark greyish-brown for todo
+color-link hlsearch "#f9f5d7,#d65d0e"               # Light background with dark orange for search highlight
+color-link statusline "#504945,transparent"         # Dark greyish-brown for status line
+color-link indent-char "#3c3836,transparent"        # Dark gray for indent chars (same as default)
+color-link line-number "#504945,transparent"        # Dark greyish-brown for line numbers
+color-link current-line-number "#7c6f64,transparent" # Dark greyish-brown for current line number
+color-link diff-added "#98971a"                     # Dark green for added lines
+color-link diff-modified "#d79921"                  # Goldenrod for modified lines
+color-link diff-deleted "#cc241d"                   # Dark red for deleted lines
+color-link gutter-error "#cc241d,transparent"       # Dark red for gutter errors
+color-link gutter-warning "#d79921,transparent"     # Goldenrod for gutter warnings
+color-link cursor-line "#ebdbb2"                    # Light beige for cursor line (lighter than default)
+color-link color-column "#3c3836"                   # Dark gray for color column (same as default)
+color-link symbol "#b8bb26,transparent"             # Dark olive green for symbols
+color-link match-brace "#f9f5d7,#8f3f71"            # Light background with dark magenta for matched braces
+color-link tab-error "#cc241d"                      # Dark red for tab errors
+color-link trailingws "#cc241d"                     # Dark red for trailing whitespace

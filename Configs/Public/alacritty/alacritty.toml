@@ -1,0 +1,73 @@
+#
+#
+#
+# Delete words with Ctrl+W
+#
+#
+#
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control"
+
+[font]
+size = 11
+
+[window]
+decorations = "none"
+
+[keyboard]
+# BEGIN WAL
+[colors.primary]
+background = '#0d0c11'
+foreground = '#c4c5c2'
+
+[colors.cursor]
+text   = '#0d0c11' # Apply background color to color of text inside cursor
+cursor = '#c4c5c2' # Apply foreground color to color of cursor
+
+[colors.vi_mode_cursor]
+text    = '#0d0c11' # Same as above
+cursor  = '#c4c5c2'
+
+[colors.search.matches]
+foreground = '#0d0c11' # Same as above
+background = '#c4c5c2' # Apply bright/white color to bg color of matching search
+
+[colors.search.focused_match]
+foreground = 'CellBackground'
+background = 'CellForeground'
+
+[colors.line_indicator]
+foreground = 'None'
+background = 'None'
+
+[colors.footer_bar]
+foreground = '#898987'
+background = '#c4c5c2'
+
+[colors.selection]
+text       = 'CellBackground'
+background = 'CellForeground'
+
+[colors.normal]
+black   = '#0d0c11'
+red     = '#53453A'
+green   = '#3C3E41'
+yellow  = '#3D4344'
+blue    = '#4D4D4B'
+magenta = '#6A6863'
+cyan    = '#837B73'
+white   = '#c4c5c2'
+
+[colors.bright]
+black   = '#898987'
+red     = '#53453A'
+green   = '#3C3E41'
+yellow  = '#3D4344'
+blue    = '#4D4D4B'
+magenta = '#6A6863'
+cyan    = '#837B73'
+white   = '#c4c5c2'
+# END WAL

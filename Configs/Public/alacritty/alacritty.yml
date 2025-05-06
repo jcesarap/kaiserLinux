@@ -1,0 +1,10 @@
+font:
+  normal:
+    family: "Anka/Coder"
+    style: Regular
+  bold:
+    family: "Anka/Coder"
+    style: Bold
+  italic:
+    family: "Anka/Coder"
+    style: Italic

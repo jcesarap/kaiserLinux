@@ -1,0 +1,10 @@
+[Unit]
+Description=Dunst Notification Daemon
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/dunst
+Restart=always
+
+[Install]
+WantedBy=default.target

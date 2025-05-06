@@ -1,0 +1,8 @@
+{
+    "colorscheme": "minimalGruv",
+    "cursorline": false,
+    "infobar": false,
+    "softwrap": true,
+    "statusformatl": "$(filename) $(modified)",
+    "statusformatr": ""
+}

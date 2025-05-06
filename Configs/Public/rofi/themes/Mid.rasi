@@ -1,0 +1,95 @@
+/* Colourschemes
+
+# Gruvbox
+
+bg: #1d2021;
+bg-alt: #282828;
+scroll: #a89984;
+fg: #fbf1c7;
+fg-alt: #ebdbb2;
+border-color: #000000;
+
+# Dark
+
+# Idk
+border-colour:               var(selected);
+handle-colour:               var(selected);
+background-colour:           var(background);
+foreground-colour:           var(foreground);
+alternate-background:        var(background-alt);
+normal-background:           var(background);
+normal-foreground:           var(foreground);
+urgent-background:           var(urgent);
+urgent-foreground:           var(background);
+active-background:           var(active);
+active-foreground:           var(background);
+selected-normal-background:  var(selected);
+selected-normal-foreground:  var(background);
+selected-urgent-background:  var(active);
+selected-urgent-foreground:  var(background);
+selected-active-background:  var(urgent);
+selected-active-foreground:  var(background);
+alternate-normal-background: var(background);
+alternate-normal-foreground: var(foreground);
+alternate-urgent-background: var(urgent);
+alternate-urgent-foreground: var(background);
+alternate-active-background: var(active);
+alternate-active-foreground: var(background);
+
+
+*/
+
+* {
+	font: "Nasalization 12";
+    bg: #151515;
+    bg-alt: #232323;
+    scroll: #a89984;
+    fg: #FFFFFF;
+    fg-alt: #424242;
+    border-color: #000000;
+}
+
+window {
+  border: 2px;
+  border-radius:  20px;
+  border-color: #1d2021;
+  /*padding: 10px;*/
+  transparency: "real";
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  children: [entry];
+  font: "Nasalization 15";
+  padding: 15px;
+}
+
+entry {
+  padding: 10px;
+}
+
+listview {
+  lines: 6;
+}
+
+scrollbar {
+  background-color: @scroll;
+  handle-color: @fg;
+  margin: 0 0 0 6px;
+}
+
+element {
+  children: [element-text];
+}
+
+element-text {
+  padding: 20px;
+}
+
+element-text selected {
+  background-color: @bg-alt;
+  text-color: @fg;
+}

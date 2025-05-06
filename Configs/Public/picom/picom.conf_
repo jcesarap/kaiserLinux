@@ -1,0 +1,44 @@
+# Enable vsync
+vsync = true
+backend = "xrender",
+
+# Transparent Alacritty
+opacity-rule = [
+    "93:class_g = 'kitty'",
+    "93:class_g = 'nvim'",
+    "90:class_g = 'vscodium'",
+    "90:class_g = 'VSCodium'",
+    "90:class_g = 'code-oss'",
+    "90:class_g = 'rofi'",
+    "90:class_g = 'Rofi'",
+    "90:class_g = 'micro'", # So exception of transparency goes directly to wallpaper as well
+    "90:class_g = 'ranger'", # So exception of transparency goes directly to wallpaper as well
+];
+
+
+# Shadow
+shadow = true;
+shadow-radius = 25;
+shadow-opacity = 0.5;
+shadow-exclude = [
+  "class_g = 'Polybar'",
+  "class_g = 'i3-frame'"
+];
+
+wintypes:
+{
+  normal = { full-shadow = true; };
+};
+
+# Enable animations
+animations = true;
+
+# Set animation duration (faster)
+animation-duration = 0.1;
+
+# Set fade in and out effects
+fading = true;
+fade-in-step = 0.1;  # Adjust for faster fade-in
+fade-out-step = 0.1;  # Adjust for faster fade-out
+
+corner-radius = 10

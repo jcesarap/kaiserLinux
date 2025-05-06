@@ -1,0 +1,500 @@
+echo $EDITOR
+export VISUAL=nvim
+export EDITOR=nvim
+source ~/.bashrc
+source ~/.bash_profile
+export VISUAL=nvim
+export EDITOR=nvim
+source ~/.bash_profile
+rofi-theme-selector 
+cmus
+sudo pacman -S transmission-gtk
+r
+vim
+sudo pacman -S chrominium
+sudo pacman -S chromium
+sudo pacman -S chromium
+adb shell cmd package install-existing com.android.vending
+i3-msg reload
+i3-msg reload
+i3-msg reload
+nvim
+r
+i3-msg reload
+i3-msg reload
+i3-msg reload
+r
+i3-msg reload
+i3-msg reload
+i3-msg reload
+fastfetch
+pacman -Qs
+pacman -Qs | fetch
+pacman -Qs | grep fetch
+sudo pacman -S fastfetch
+sudo pacman -S fastfetch
+pacman -Qqd | pacman -Rsu --print -
+pacman -Qtdq | sudo pacman -Rns -
+printf "\n --- DO YOU WANT TO REMOVE ORPHAN PACKAGES? --- \n\n" && pacman -Qtdq | sudo pacman -Rns -
+m
+m
+sudo pacman -R chromium
+m
+c
+m
+clear
+m
+c
+r
+pacman -Qtdq | sudo pacman -Rns -
+printf "\n --- DO YOU WANT TO REMOVE ORPHAN PACKAGES? --- \n\n" && pacman -Qtdq | sudo pacman -Rns -
+i3-msg reload
+i3-msg reload
+i3-msg reload
+cmus
+echo '\_SB.PCI0.LPC0.EC0.SPMO' > /proc/acpi/call 
+echo '\_SB_.GZFD.WMAA 0 0x2C 3' > /proc/acpi/call
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+r
+r
+c
+ls
+sudo chmod +x summarise.sh 
+c
+r
+c
+./summarise.sh 
+c
+./summarise.sh 
+cmus
+pkill ranger
+r
+pkill ranger
+r
+pkill ranger
+r
+pkill ranger
+r
+r
+pkill ranger
+r
+r
+pkill ranger
+r
+cmus
+ls
+r
+i3-msg reload
+r
+i3-msg restart
+r
+r
+i3-msg reload
+cat Sketch.md 
+i3-msg reload
+cd Dropbox/Notes
+ls
+cd þérsavisr/
+ls
+nvim Arki.md
+cd Dropbox/
+cd Notes
+nvim Sketch.md 
+pkill code
+pkill code
+r
+cmus
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+pkill polybar
+pkill picom
+picom -b
+pkill picom
+picom -b
+micro
+pkill picom
+picom -b
+pkill picom
+picom -b
+r
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+pkill polybar
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg reload
+pkill nvim
+nvim
+nvim
+:nvim
+nvim
+nvim
+nvim
+pkill nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+c
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+cmus
+sudo pacman -S luarocks
+m
+reboot
+sudo pacman -S polybar
+sudo pacman -S luarocks
+sudo pacman -S luarocks
+r
+r
+picom -b
+pkill picom
+picom -b
+picom -b
+pkill picom
+picom -b
+nvim
+nvim
+nvim
+nvim
+r
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+ranger
+nvim
+xprop
+nvim
+nvim
+nvim
+nvim
+pkill nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+c
+nvim
+nvim
+nvim
+nvim
+nvim
+c
+nvim
+nvim
+nvim
+cmus
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim -v
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+r
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+r
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+pkill nvim
+pkill firefox
+nvim
+micro
+m
+i3
+startx
+poweroff
+pkill picom
+picom -b
+picom -b
+reboot
+nvim
+nvim
+nvim
+nvim
+playerctl -h
+i3-msg reload
+nvim
+bluez
+sudo pacman -S bluez
+sudo systemctl start bluetooth
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+c
+r
+nvim
+nvim
+cmus
+poweroff
+sudo rm -r "~/.local/share/nvim" && ln -s "~/Dropbox/Kaiser-Linux/Glyphs/nvim/" "~/.local/share/"
+ranger     ~/.local/share/nvim/lazy/wal.vim
+nvim
+nvim
+cmus
+	sudo timeshift --create --comments "$name"
+sudo cryptsetup luksOpen /dev/sda1 spans
+sudo mkdir -p /mnt/spans ||:
+sudo mount /dev/mapper/spans /mnt/spans
+cd /mnt/spans
+c
+ls
+r
+r
+m
+m
+c
+ls
+sudo rm -r *
+r
+sudo timeshift
+sudo timeshift --list
+sudo timeshift --delete
+sudo timeshift --delete
+sudo timeshift --check
+c
+m
+c
+m
+c
+m
+nvim
+r
+nvim
+reboot
+cmus
+ls
+nvim
+r
+nvim
+xev
+i3-msg reload
+i3-msg reload
+setxkbmap br
+setxkbmap br
+setxkbmap br
+pkill picom
+picom -b
+sudo pacman -S GIMP
+pacman -Ss gimp
+sudo pacman -S gimp
+feh "~/Dropbox/Avíi/Wallpapers/Art/one_ring_alt.jpg"
+i3-msg reload
+feh "~/Dropbox/Avíi/Wallpapers/Art/one_ring_alt.jpg"
+i3-msg reload
+i3-msg restart
+reboot
+i3-msg reload
+i3-msg reload
+i3-msg reload
+i3-msg restart
+i3-msg restart
+i3-msg i3lock -i "~/Dropbox/Avíi/Wallpapers/Art/oneringalt.jpg"
+i3-msg i3lock -i ~/Dropbox/Avíi/Wallpapers/Art/oneringalt.jpg
+i3-msg i3lock
+r
+micro
+cmus
+m
+poweroff
+reboot
+reboot
+reboot
+i3-msg reload
+polybar mybar_internal
+r
+m
+sudo timeshift --delete-all
+c
+m
+m
+c
+m
+c
+nvim
+sudo pacman -Syu
+reboot
+r
+ly
+pacman -Qe
+pacman -Qe|grep ly
+lu 1.0.2-1
+ly 1.0.2-1
+reboot
+sudo systemctl stop nvidia-suspend.service
+sudo systemctl stop nvidia-hibernate.service
+sudo systemctl stop nvidia-resume.service
+sudo systemctl disable nvidia-suspend.service
+sudo systemctl disable nvidia-hibernate.service
+sudo systemctl disable nvidia-resume.service
+sudo rm /lib/systemd/system-sleep/nvidia
+reboot
+sudo pacman -S SDDM
+sudo pacman -S sddm
+sudo systemctl enable sddm
+sudo systemctl disable ly
+sudo systemctl enable sddm
+sudo systemctl start sddm
+cd ~/.local/share/xorg
+ls
+cat Xorg.0.log
+cat Xorg.0.log
+cat Xorg.1.log
+cat Xorg.1.log | nvidia
+cat Xorg.1.log | grep nvidia
+sudo usermod -aG video magn
+sudo chmod 666 /var/run/nvidia-xdriver*
+cat Xorg.1.log
+reboot
+sudo pacman -R sddm
+sudo pacman -R ly
+sudo pacman -S lightdm
+lightdm
+sudo systemctl enable lightdm
+sudo systemctl start lightdm
+sudo pacman -R dkms nvidia-utils libva-nvidia-driver nvidia-settings
+sudo pacman -R nvidia-dkms dkms nvidia-utils libva-nvidia-driver nvidia-settings
+reboot
+startx
+i3
+sudo systemctl start lightdm
+c
+sudo pacman -R lightdm
+sudo pacman -R lightdm lightdm-gtk-greeter
+sudo pacman -S ly
+sudo systemctl enable ly
+sudo systemctl start ly
+sudo pacman -Syu
+reboot
+c
+startx
+cat ~/.local/share/xorg/Xorg.0.log
+pacman -Ss xf86-video
+pacman -Ss xf86-video-nouveau xf86-video-intel
+sudo pacman -S xf86-video-nouveau xf86-video-intel
+startx
+reboot
+envycontrol
+envycontrol -q
+envycontrol -s intel
+envycontrol -s integrated
+sudo envycontrol -s integrated
+reboot
