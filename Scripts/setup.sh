@@ -62,7 +62,7 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 	sudo -u "$user_name" mkdir -p "/home/$user_name/.compiled" || :
     cd "/home/$user_name/.compiled"
 	# i3color
-	sudo dnf install -y codium autoconf automake cairo-devel fontconfig gcc libev-devel libjpeg-turbo-devel libXinerama libxkbcommon-devel libxkbcommon-x11-devel libXrandr pam-devel pkgconf xcb-util-image-devel xcb-util-xrm-devel
+	sudo dnf install -y autoconf automake cairo-devel fontconfig gcc libev-devel libjpeg-turbo-devel libXinerama libxkbcommon-devel libxkbcommon-x11-devel libXrandr pam-devel pkgconf xcb-util-image-devel xcb-util-xrm-devel
 	git clone https://github.com/Raymo111/i3lock-color.git || :
 	cd i3lock-color || :
 	./install-i3lock-color.sh || :
@@ -73,9 +73,7 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 	# Pywal
 	sudo dnf install python3-pip
 	sudo pip3 install pywal
-	# AutoCPUFreq
-	git clone https://github.com/AdnanHodzic/auto-cpufreq.git || :
-	cd auto-cpufreq && yes i | sudo ./auto-cpufreq-installer || :
+    # ---
 	sudo dnf install -y mutter gnome-shell gnome-tweaks gnome-backgrounds baobab gnome-control-center gnome-menus gnome-session gnome-settings-daemon gdm # Gnome
     # Nerdfonts
     curl -o /tmp/Hack.zip -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip
@@ -86,34 +84,26 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
     sudo dnf install -y anydesk
     # --- Native package manager
     sudo dnf install -y luarocks syncthing nautilus fontawesome-fonts-all
-	sudo dnf install -y haveged dbus wget zsh timeshift timeshift-gtk                                                                                                                                                                                            # Base
+	sudo dnf install -y haveged dbus wget zsh timeshift 
 	sudo dnf install -y i3 i3status dmenu i3lock xbacklight feh
 	sudo dnf install -y xss-lock picom network-manager-applet light maim xclip dunst polybar rofi
-	sudo dnf install -y xorg-x11-server-Xorg xorg-x11-xinit i3 i3status i3lock ly polybar dmenu i2c-tools                                                                                                                                                        # Xorg & i3
-	sudo dnf install -y xset xrandr arandr picom                                                                                                                                                                                                                 # Display
-	sudo dnf install -y parcellite xdotool feh xarchiver atool unzip                                                                                                                                                                                             # Tools
-	sudo dnf install -y postgresql bc python3-pip git gh gcc cmake automake npm nodejs ripgrep pandoc cargo bison rsync mediainfo meson python3 json-c cairo glib2 golang NetworkManager-libnm openssh                                                           # Development / Compiling
-	sudo dnf install -y iwd ufw firewalld NetworkManager yt-dlp                                                                                                                                                                                                  # Network
-	sudo dnf install -y brightnessctl rofi dunst playerctl alsa-utils alsa-tools alsa-lib pipewire pipewire-pulse pipewire-alsa wireplumber pavucontrol                                                                                                          # Xorg & Wayland Inter-Compatible
-	sudo dnf install -y thermald acpid powertop glances upower lm_sensors cpupower procps-ng                                                                                                                                                                     # POWER OPTIMISATION
-	sudo dnf install -y pass firefox bluez bluez-tools blueman unzip htop ranger w3m fzf findutils alacritty kitty keepassxc flameshot evince gnome-system-monitor id3v2 gnome-disk-utility clamtk calibre android-tools micro neovim vlc mpv socat jq mpv-mpris speedcrunch # Packages
-	sudo dnf install -y xdg-utils flatpak-xdg-utils xdg-desktop-portal-gtk xdg-user-dirs-gtk                                                                                                                                                                     # For file integration in different packages
-	sudo dnf install -y cups hplip system-config-printer                                                                                                                                                                                                         # Printer
+	sudo dnf install -y xorg-x11-server-Xorg xorg-x11-xinit i3 i3status i3lock ly polybar dmenu i2c-tools
+	sudo dnf install -y xset xrandr arandr picom
+	sudo dnf install -y parcellite xdotool feh xarchiver atool unzip
+	sudo dnf install -y postgresql bc python3-pip git gh gcc cmake automake npm nodejs ripgrep pandoc cargo bison rsync mediainfo meson python3 json-c cairo glib2 golang NetworkManager-libnm openssh                                                           
+	sudo dnf install -y iwd ufw firewalld NetworkManager yt-dlp 
+	sudo dnf install -y brightnessctl rofi dunst playerctl alsa-utils alsa-tools alsa-lib pipewire pipewire-alsa wireplumber pavucontrol 
+	sudo dnf install -y thermald acpid powertop glances upower lm_sensors cpupower procps-ng
+	sudo dnf install -y pass firefox bluez bluez-tools blueman unzip htop ranger w3m fzf findutils alacritty kitty keepassxc flameshot evince gnome-system-monitor id3v2 gnome-disk-utility clamtk calibre android-tools micro neovim vlc mpv socat jq mpv-mpris speedcrunch 
+	sudo dnf install -y xdg-utils flatpak-xdg-utils xdg-desktop-portal-gtk xdg-user-dirs-gtk
+	sudo dnf install -y cups hplip system-config-printer
 	sudo dnf install -y dictd mythes gvfs gvfs-mtp android-file-transfer ncdu
 	sudo dnf install -y gstreamer1 gstreamer1-plugins-base gstreamer1-plugins-base-tools gstreamer1-plugins-base-devel
-	sudo dnf install \
-		https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-42.noarch.rpm \
-		https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-42.noarch.rpm
-	sudo dnf install \
-		gstreamer1-plugins-good \
-		gstreamer1-plugins-bad-freeworld \
-		gstreamer1-plugins-ugly-free \
-		gstreamer1-vaapi
 	sudo dnf install -y polkit lxqt-policykit ImageMagick gtk3
-	flatpak install -y com.github.unrud.VideoDownloader org.videolan.VLC com.github.johnfactotum.Foliate com.brave.Browser com.discordapp.Discord md.obsidian.Obsidian io.github.shiftey.Desktop com.transmissionbt.Transmission
+	flatpak install -y com.github.unrud.VideoDownloader org.videolan.VLC com.github.johnfactotum.Foliate com.brave.Browser com.discordapp.Discord md.obsidian.Obsidian io.github.shiftey.Desktop com.transmissionbt.Transmission re.sonny.Junction
 }
 
-# --- --- s-tweaks
+
 
 function tweaks() {
 	# CREATE DIRECTORIES
